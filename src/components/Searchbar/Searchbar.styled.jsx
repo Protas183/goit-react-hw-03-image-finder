@@ -4,10 +4,12 @@ export const Header = styled.header`
   margin-bottom: 25px;
   padding: 20px;
   min-width: 100%;
-
-  background-color: var(--bg);
-
-  box-shadow: var(--main-shadow);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  background-color: #0000CD;
+  border-radius: 3px;
 `;
 
 export const SearchForm = styled.form`
@@ -21,10 +23,17 @@ export const SearchForm = styled.form`
 export const Input = styled.input`
   padding: 11px 25px;
   width: 400px;
-
+  display: inline-block;
+  width: 500px;
+  font: inherit;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  padding-left: 4px;
+  padding-right: 4px;
   font-size: 18px;
-  color: var(--secondary);
 
+  color: grey;
   border: 1px solid black;
   border-radius: 15px;
   transition: all 300ms ease-in-out;
@@ -40,18 +49,15 @@ export const ButtonSubmit = styled.button`
 
   font-weight: 500;
   font-size: 18px;
-  color: var(--accent);
-
-  background-color: transparent;
+  color: grey;
+  background-color: white;
   border: 1px solid black;
   border-radius: 15px;
-
   cursor: pointer;
-  box-shadow: var(--main-shadow);
-
   transition: all 300ms ease-in-out;
 
   :hover {
+    color: black;
     background-color: #D3D3D3;
   }
 
