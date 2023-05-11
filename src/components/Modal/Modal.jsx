@@ -27,7 +27,7 @@ export class Modal extends React.Component {
     return createPortal(
       <Overlay onClick={closeModal}>
         <ModalViewer>
-          <ModalImg src={modalImg} alt={tags} />
+          <ModalImg src={modalImg} alt={tags} onClick={e => { e.stopPropagation() }} />
         </ModalViewer>
       </Overlay>,
       modalRoot
